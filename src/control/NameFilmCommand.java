@@ -11,7 +11,7 @@ public class NameFilmCommand implements Command{
     private final FilmDisplay filmDisplay;
     private final List<Film> films; 
     
-    public NameFilmCommand(String name, FilmDisplay filmDisplay, List<Film> films) {
+    public NameFilmCommand(String name, List<Film> films, FilmDisplay filmDisplay) {
         this.name = name;
         this.filmDisplay = filmDisplay;
         this.films = films;

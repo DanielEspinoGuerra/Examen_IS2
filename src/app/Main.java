@@ -46,13 +46,14 @@ public class Main {
         result.put("n", new NewCommand(films, catalogueDisplay));
         result.put("r", new RatedCommand(films, catalogueDisplay));
         result.put("d", new DefaultCommand(filmsLoader, films, catalogueDisplay));
-        result.put("harry potter", new NameFilmCommand("Harry Potter", filmDisplay, films));
-        result.put("Hola", new NameFilmCommand("Hola", filmDisplay, films));
-        result.put("Adios", new NameFilmCommand("Adios", filmDisplay, films));
+        result.put("harry", new NameFilmCommand("Harry", films, filmDisplay));
+        result.put("Hola", new NameFilmCommand("Hola", films, filmDisplay));
+        result.put("adios", new NameFilmCommand("Adios", films, filmDisplay));
         result.put("G", result.get("g"));
         result.put("Q", result.get("q"));
         result.put("D", result.get("d"));
-        result.put("Harry Potter", result.get("harry potter"));
+        result.put("Harry", result.get("harry"));
+        result.put("Adios", result.get("adios"));
         result.put("R", result.get("r"));
         result.put("M", result.get("m"));
         result.put("N", result.get("n"));
